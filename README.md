@@ -18,8 +18,8 @@ We are able to generate the session token, but the whole window ends up reloadin
    First, clone the repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/your-repository.git
-   cd your-repository
+   git clone https://github.com/pranavp10/test-auth-dynamic.git
+   cd test-auth-dynamic
    ```
 
 2. **Install Dependencies**
