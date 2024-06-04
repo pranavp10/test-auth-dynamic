@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project README
 
-## Getting Started
+## Overview
 
-First, run the development server:
+We are able to generate the session token, but the whole window ends up reloading to get the session data. This means that any data that was input by the user is lost and has to be typed in again
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js 14 (App Directory)**
+- **NextAuth (Beta v5)**
+- **Dynamic SDK (Solana)**
+- **Bun**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Setup Instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clone the Repository**
 
-## Learn More
+   First, clone the repository to your local machine using the following command:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/your-repository.git
+   cd your-repository
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install Dependencies**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   Ensure you have `bun` installed. If not, you can install it from [Bun's official website](https://bun.sh/).
 
-## Deploy on Vercel
+   ```bash
+   bun i
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Environment Variables**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   Create a new file called `.env.local` in the root directory of the project. Copy all the environment variables from `.env.example` to `.env.local`.
+
+   ```bash
+   cp .env.example .env.local
+   ```
+
+   Make sure to update the values in `.env.local` with your specific configuration.
+
+4. **Run the Development Server**
+
+   Start the development server using Bun:
+
+   ```bash
+   bun run dev
+   ```
+
+   The application will be available at `http://localhost:3000`.
+
+Thank you for helping us! We hope this guide helps you get started quickly. Happy coding!
